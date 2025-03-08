@@ -9,7 +9,7 @@ type ErrorPropsType = {
   reset: () => void;
 };
 
-export default function error({ error, reset }: ErrorPropsType) {
+export default function Error({ error, reset }: ErrorPropsType) {
   useEffect(() => {
     // Optionally log the error to an error reporting service
     console.error("Error:", error);
