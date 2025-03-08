@@ -102,7 +102,7 @@ export async function updateInvoice(id: string, prevState: State, formData: Form
   }
 
   revalidatePath("/dashboard/invoices");
-  // revalidatePath("/dashboard");
+  revalidatePath("/dashboard");
   redirect("/dashboard/invoices");
 }
 
