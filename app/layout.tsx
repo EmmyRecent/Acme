@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   },
   description: "The official Next.js Course Dashboard, built with App Router",
   metadataBase: new URL("https://acme-pi-self.vercel.app/dashboard"),
+  openGraph: {
+    images: "/opengraph-image.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
