@@ -6,12 +6,17 @@ import { lusitana } from "@/app/ui/fonts";
 import { Suspense } from "react";
 import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
 import { fetchInvoicesPages } from "@/app/lib/data";
+import { Metadata } from "next";
 
 type PagePropsTypes = {
   searchParams?: Promise<{
     query?: string;
     page?: string;
   }>;
+};
+
+export const metadata: Metadata = {
+  title: "Invoice",
 };
 
 export default async function Page({ searchParams }: PagePropsTypes) {
